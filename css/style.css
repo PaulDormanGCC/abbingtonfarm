@@ -1,0 +1,432 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    background-color: #2d694b;
+    padding: 20px 20px;
+    align-items: center;
+}
+
+header img {
+    width: 250px;
+}
+
+nav {
+    width: 100%;
+}
+
+.main-nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.main-nav li {
+    list-style-type: none;
+}
+
+.main-nav a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.main-nav a:hover {
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+
+footer {
+    background-color: #2d694b;
+    padding: 50px;
+    color: white;
+    font-size: 18px;
+}
+
+.line {
+    height: 1px;
+    border-bottom: 1px solid white;
+    margin: auto;
+    margin-bottom: 4px;
+}
+
+.line-big {
+    width: 90%;
+}
+
+.line-small {
+    width: 88%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.footer-sitemap {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-sitemap a {
+    color: white;
+    font-size: 18px;
+}
+
+.fa-brands {
+    padding-top: 10px;
+    margin-right: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+.fa-instagram:hover {
+    color: #feda75;
+}
+
+.fa-facebook:hover {
+    color: #1877F2;
+}
+
+.fa-twitter:hover {
+    color: #657786 ;
+}
+
+/* hero section */
+
+.hero img {
+    display:block;
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* history */
+.history {
+    background-color: #2d694b;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+}
+
+.history h1:last-of-type {
+    padding-bottom: 20px;
+}
+
+.history p, .proverb p {
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.history a {
+    color: white;
+    font-size: 22px;
+}
+
+.history-big {
+    width: 100px;
+}
+
+.history-small {
+    width: 95px;
+}
+
+/* Exterior */
+
+.exterior img {
+    display: block;
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+}
+
+/* Proverb */
+
+.proverb {
+    background-color: #f5efe7;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    color: #2d694b;
+}
+
+.proverb h1 {
+    padding-bottom: 20px;
+}
+
+.proverb cite {
+    font-size: 22px;
+}
+
+/* menu */
+
+#menu {
+    background-color: #2d694b;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu h1 {
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+#menu img {
+    width: 60vw;
+}
+
+#menu p {
+    padding: 50px 0;
+    font-size: 18px;
+    width: 50%;
+}
+
+#menu a {
+    color: white;
+    font-size: 20px;
+}
+
+.bot-pad {
+    margin-bottom: 20px;
+}
+
+/* Cards */
+
+.cards {
+    background-color: #f5efe7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0;
+    gap: 50px;
+    color:#2d694b;
+}
+
+.cards h1 {
+    font-size: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    gap: 50px;
+}
+
+.card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.card-img, .card-text {
+    width: 50%;
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text h1 {
+    padding: 20px 0;
+    font-size: 36px;
+}
+
+.card-text p {
+    padding-bottom: 20px;
+}
+
+.card-text a {
+    font-size: 22px;
+}
+
+/* Gallery */
+
+.gallery {
+    padding: 50px 0;
+}
+
+.gallery h1 {
+    text-align: center;
+    color: #2d694b;
+    padding-bottom: 50px;
+}
+
+.gallery-images {
+    width: 50%;
+    display: grid;
+    margin: auto;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video video{
+    display: block;
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.video h1 {
+    position: absolute;
+    color: white;
+    border: 2px white solid;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 40px;
+    right: 10px;
+    top: 20px;
+}
+
+/* form */
+.voucher {
+    background-color: #f1f0f0;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: white;
+}
+
+.order-image {
+    position: relative;
+}
+
+.order-image p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 26px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 5px;
+}
+.order-image img {
+    width: 100%;
+}
+
+.order-text {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+.order-text {
+    font-size: 14px;
+    color: rgb(142, 175, 142);
+}
+
+.order-descr p:last-of-type {
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.order-value {
+    display: flex;
+    flex-direction: column;
+}
+
+.value {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    line-height: 28px;
+    width: 100%;
+    display: block;
+}
+
+input {
+    font-size: 25px;
+}
+
+input[type="number"] {
+    border: 1px solid green;
+    padding: 5px;
+    color: rgb(142, 175, 142);
+    font-weight: bold;
+}
+
+input[type="number"]:last-of-type {
+    width: 40%;
+}
+
+button {
+    background-color: #2d694b;
+    border: 1px #2d694b solid;
+    margin-left: 10px;
+    color: white;
+    padding: 11px 0;
+    width: calc(60% - 15px);
+    font-size: 16px;
+    vertical-align: top;
+}
+
+button:hover {
+    background-color: #599d7b;
+    border: 1px #599d7b solid;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+}
+
+.google-map {
+    width: 50%;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
